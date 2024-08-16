@@ -1,0 +1,209 @@
+* {
+	padding: 0;
+	margin: 0;
+    box-sizing: border-box;
+	font-family: century gothic;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+}
+.titulo {
+	padding: 40px;
+}
+body{
+    background-color: #333;
+}
+.titulo1{
+    padding: 30px;
+}
+nav{
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    background-color:white;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    transition: 0.8s all;
+    padding: 18px 20px;
+}
+nav ul li:hover {
+    background-color: white;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    /*Al ser visitado cambia a este color*/
+    color: rgb(12, 12, 12);
+}
+
+/*estilo logo*/
+.img-logo{
+    width: 100px;
+    border-radius: 50%;
+}
+
+
+.contenido {
+	display: flex;
+    justify-content: space-between;
+	width: 80%;
+	margin: auto;
+	margin-top: 50px;
+}
+.contenido .articulo {
+	width: 70%;
+	margin:auto;
+    flex-direction: column;
+}
+.contenido .articulo div {
+	width: 90%;
+	padding: 15px;
+	background-color: yellow;
+	border-radius: 15px;
+	margin-bottom: 15px;
+}
+.contenido .articulo img {
+	width: 200px;
+	border-radius: 15px;
+}
+.contenido .secundario {
+	width: 30%;
+}
+.contenido .secundario p {
+	background-color: yellow;
+	border-radius: 15px;
+	padding: 30px;
+	height: 700px;
+}
+.piedepagina {
+	background-color: #0a476b;
+	margin-top: 100px;
+}
+.piedepagina p {
+	padding: 100px;
+}
+.footer {
+    display: flex;               /* Organiza los divs en fila */
+    justify-content: space-between; /* Distribuye el espacio entre las partes */
+    padding: 20px;
+    background-color: yellow;      /* Color de fondo del footer */
+    color: white;                /* Color del texto */
+}
+
+.footer-section {
+    flex: 1;                     /* Cada parte ocupa el mismo espacio */
+    padding: 10px;
+}
+
+.footer-section p {
+    margin: 0;
+}
+.contenido {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.contenido .articulo {
+    width: 100%;
+    display: grid;                  /* Cambia a Grid Layout */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    grid-template-rows: repeat(2, auto);   /* Dos filas */
+    gap: 20px;                      /* Espacio entre los cuadros */
+}
+
+.contenido .articulo div {
+    padding: 15px;
+    background-color: yellow;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.contenido .articulo img {
+    width: 100%;
+    border-radius: 15px;
+}
+.centrado {
+    grid-column: span 2;        /* El div centrado ocupa las dos columnas */
+    justify-self: center;       /* Centra el div horizontalmente */
+    margin-top: 20px;           /* Espacio adicional en la parte superior */
+}
+
+.centrado img {
+    width: 200px;               /* Ajusta el ancho de la imagen si es necesario */
+    margin: 0 auto;             /* Centra la imagen dentro del div */
+    display: block;             /* Asegura que la imagen se comporte como un bloque */
+}
+.pie-pagina{
+    width: 100%;
+    background-color:white;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color:black;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color:black;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color:yellow;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
