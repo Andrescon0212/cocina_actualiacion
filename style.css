@@ -114,6 +114,10 @@ a:visited{
     margin-top: 50px;
 }
 
+.botones{
+    padding: 10px;
+}
+
 .contenido .articulo {
     width: 100%;
     display: grid;                  /* Cambia a Grid Layout */
