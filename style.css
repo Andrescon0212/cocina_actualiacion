@@ -137,6 +137,25 @@ a:visited{
     width: 100%;
     border-radius: 15px;
 }
+
+/*articulo conocenos*/
+.contenido.articulo_conocenos{
+    width: 100%;
+    display: grid;                  /* Cambia a Grid Layout */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    grid-template-rows: repeat(2, auto);   /* Dos filas */
+    gap: 20px;  
+
+}
+
+
+.contenido .articulo_conocenos div{
+    padding: 15px;
+    background-color: yellow;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
 .centrado {
     grid-column: span 2;        /* El div centrado ocupa las dos columnas */
     justify-self: center;       /* Centra el div horizontalmente */
